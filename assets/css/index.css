@@ -1,0 +1,14 @@
+.hero {
+  & .interface {
+    & .conteudo {
+    }
+
+    & .imagem {
+    }
+  }
+}
+
+.contato {
+  & .interface {
+  }
+}

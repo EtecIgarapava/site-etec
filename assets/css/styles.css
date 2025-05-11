@@ -1,136 +1,276 @@
 /* geral */
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-    /* outline: 2px solid red; */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  /* outline: 2px solid red; */
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 .interface {
-    max-width: 128rem;
-    margin: 0 auto;
-    padding: 5% 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  max-width: 128rem;
+  margin: 0 auto;
+  padding: 5% 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* variaveis */
 :root {
-    /* cores principais */
-    --vermelho-base: #B20000;
-    --vermelho-escuro: #7E0000;
-    --azul-base: #005C6D;
-    --primario-titulos-hover: #004854;
-    --secundario-hover: #00D8E8;
-    --azul-destaque-base: #00C1CF;
+  /* cores principais */
+  --vermelho-base: #b20000;
+  --vermelho-escuro: #7e0000;
+  --azul-base: #005c6d;
+  --primario-titulos-hover: #004854;
+  --secundario-hover: #00d8e8;
+  --azul-destaque-base: #00c1cf;
 
-    /* cores auxiliares */
-    --verde-base: #A0C340;
-    --blueberry-base: #4C7EFF;
-    --crayola-base: #FFC24C;
-    --violeta-base: #8A29E6;
-    --coral-base: #FF4C4D;
-    --pink-base: #FF4CA2;
+  /* cores auxiliares */
+  --verde-base: #a0c340;
+  --blueberry-base: #4c7eff;
+  --crayola-base: #ffc24c;
+  --violeta-base: #8a29e6;
+  --coral-base: #ff4c4d;
+  --pink-base: #ff4ca2;
 
-    /* cores neutras */
-    --cinza-texto-base: #666666;
-    --cinza-claro: #DADADA;
-    --cinza-hover: #E6E6E6;
-    --prata-base: #F8F8F8;
-    --branco: #FFFFFF;
+  /* cores neutras */
+  --cinza-texto-base: #666666;
+  --cinza-claro: #dadada;
+  --cinza-hover: #e6e6e6;
+  --prata-base: #f8f8f8;
+  --branco: #ffffff;
 
-    /* cores de feedback */
-    --cancelado: #D32719;
-    --andamento: #B78718;
-    --concluido: #3ACF1F;
-    --cancelado-outline: #F95B4D;
-    --andamento-outline: #DFB77B;
-    --concluido-outline: #80E96D;
-    --cancelado-light: #FDD5D1;
-    --andamento-light: #FFF5EA;
-    --concluido-light: #E8FBE4;
+  /* cores de feedback */
+  --cancelado: #d32719;
+  --andamento: #b78718;
+  --concluido: #3acf1f;
+  --cancelado-outline: #f95b4d;
+  --andamento-outline: #dfb77b;
+  --concluido-outline: #80e96d;
+  --cancelado-light: #fdd5d1;
+  --andamento-light: #fff5ea;
+  --concluido-light: #e8fbe4;
 }
 
 /* header */
 header {
-    height: 10em;
-    background-color: var(--vermelho-base);
+  height: 10em;
+  background-color: var(--vermelho-base);
 
-    & .interface {
-        justify-content: space-between;
+  & .interface {
+    justify-content: space-between;
+    color: var(--branco);
+    padding: 1% 0;
+  }
+
+  & .logo {
+    width: 14rem;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  & .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+
+    & nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2em;
+
+      & h1 {
+        font-weight: bold;
+      }
+
+      & a {
         color: var(--branco);
-        padding: 1% 0;
-    }
+        text-decoration: none;
+        font-size: 1.8rem;
+        font-weight: 400;
+        transition: 0.3s ease all;
 
-    & .logo {
-        width: 14rem;
-
-        & img {
-            width: 100%;
+        &:hover {
+          color: var(--cinza-claro);
         }
+      }
+
+      & button {
+        background-color: transparent;
+        border: none;
+        color: var(--branco);
+        font-size: 1.8rem;
+        cursor: pointer;
+        transition: 0.3s ease all;
+
+        &:hover {
+          color: var(--cinza-claro);
+        }
+      }
     }
 
-    & .menu {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 2em;
+    & button {
+      background-color: transparent;
+      border: none;
+      color: var(--branco);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+  }
+}
+/* Footer */
+footer {
+  background-color: white;
+  width: 100%;
 
-        & nav {
+  & .interface {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+
+    & .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem 0rem;
+
+      & .titulo {
+        color: var(--azul-base);
+        font-family: "Roboto", sans-serif;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+
+      & .descricao {
+        color: var(--cinza-texto-base);
+        font-family: "Roboto", sans-serif;
+        font-size: 1.7rem;
+        text-align: left;
+      }
+
+      & article {
+        width: 25%;
+        height: 20rem;
+      }
+
+      & .contato {
+        & ul {
+          & li {
+            list-style: none;
+            color: var(--cinza-texto-base);
+            font-family: "Roboto", sans-serif;
+            font-size: 1.7rem;
             display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 2em;
+            gap: 1rem;
+            margin: 1rem 0rem;
 
-            & h1 {
-                font-weight: bold;
+            & i {
+              font-size: 2.2rem;
+              color: var(--vermelho-base);
             }
+          }
+        }
+      }
 
-            & a {
-                color: var(--branco);
+      & .links-rapidos {
+        & nav {
+          & ul {
+            & li {
+              list-style: none;
+              font-family: "Roboto", sans-serif;
+              font-size: 1.7rem;
+              display: flex;
+              align-items: center;
+              gap: 1rem;
+              margin: 1rem 0rem;
+
+              & a {
+                color: var(--cinza-texto-base);
                 text-decoration: none;
-                font-size: 1.8rem;
-                font-weight: 400;
-                transition: .3s ease all;
-
-                &:hover {
-                    color: var(--cinza-claro);
-                }
+                font-size: 1.7rem;
+              }
             }
-
-            & button {
-                background-color: transparent;
-                border: none;
-                color: var(--branco);
-                font-size: 1.8rem;
-                cursor: pointer;
-                transition: .3s ease all;
-
-                &:hover {
-                    color: var(--cinza-claro);
-                }
-            }
+          }
         }
+      }
+      & .redes-sociais {
+        & nav {
+          display: flex;
+          gap: 2rem;
+          & i {
+            font-size: 3rem;
+            color: var(--vermelho-base);
+            gap: 1rem;
+          }
 
-        & button {
-            background-color: transparent;
-            border: none;
-            color: var(--branco);
-            font-size: 1.8rem;
-            cursor: pointer;
+          & i:hover {
+            color: var(--vermelho-escuro);
+          }
         }
+      }
     }
+    & .direitos {
+      border-top: 1px solid var(--cinza-claro);
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      & p {
+        color: var(--cinza-texto-base);
+        font-size: 1.7rem;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+/* Botões de links  */
+.btn-vermelho {
+  color: var(--branco);
+  text-decoration: none;
+  background-color: var(--vermelho-base);
+  padding: 0.7rem 2rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.7rem;
+  text-align: left;
+
+  & span {
+    margin-right: 1rem;
+  }
+}
+
+.btn-azul {
+  color: var(--branco);
+  text-decoration: none;
+  background-color: var(--azul-base);
+  padding: 0.7rem 2rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.7rem;
+  text-align: left;
+
+  & span {
+    margin-right: 1rem;
+  }
 }
