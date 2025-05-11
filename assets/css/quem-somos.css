@@ -1,0 +1,243 @@
+#titulo {
+    height: 20rem;
+    background-color: var(--prata-base);
+
+    & .interface {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    & h1 {
+        font-size: 5rem;
+    }
+
+    & p {
+        font-size: 2rem;
+    }
+}
+
+#nossa-historia {
+    & .interface {
+        gap: 4rem;
+        justify-content: space-between;
+    }
+
+    & .txt-nossa-historia {
+        width: 50%;
+
+        & h2 {
+            font-size: 3.5rem;
+            color: var(--azul-base);
+        }
+
+        & p {
+            font-size: 1.8rem;
+            font-weight: 300;
+            color: var(--cinza-texto-base);
+            margin: 3rem 0;
+        }
+    }
+
+    & .container-img {
+        position: relative;
+        width: 50%;
+
+        & img {
+            border-radius: 1rem;
+            width: 80rem;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        & span {
+            position: absolute;
+            bottom: -3%;
+            left: -8%;
+            background-color: var(--vermelho-base);
+            color: var(--branco);
+            padding: 1.5rem 2rem;
+            font-size: 2.5rem;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+    }
+}
+
+#missao-visao-valores {
+    background-color: var(--prata-base);
+
+    & .interface {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    & h3 {
+        font-size: 4rem;
+        color: var(--azul-base);
+    }
+
+    & .container-cards {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 3rem;
+
+        & article {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            width: 33.33%;
+            height: 25rem;
+            background-color: var(--branco);
+            padding: 3rem;
+            border-radius: 1rem;
+
+            & .titulo {
+                font-weight: bold;
+                font-size: 2.5rem;
+                color: var(--vermelho-base);
+            }
+
+            & ul {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                margin-left: 2rem;
+            }
+
+            & p,
+            ul li {
+                font-size: 1.8rem;
+                color: var(--cinza-texto-base);
+            }
+        }
+    }
+}
+
+#nossa-equipe {
+    & .interface {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    & h4 {
+        font-size: 4rem;
+        color: var(--azul-base);
+    }
+
+    & .container-cards {
+        display: flex;
+        gap: 3rem;
+
+        & article {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--prata-base);
+            padding: 2rem;
+            border-radius: 1rem;
+
+            & img {
+                border-radius: 50%;
+                object-fit: cover;
+                height: 15rem;
+                width: 15rem;
+            }
+
+            & .nome {
+                font-size: 2.5rem;
+                font-weight: 600;
+            }
+
+            & .cargo {
+                font-size: 2rem;
+                color: var(--vermelho-base);
+            }
+
+            & .descricao {
+                color: var(--cinza-texto-base);
+                font-size: 1.5rem;
+                text-align: center;
+            }
+        }
+    }
+
+    & p {
+        font-size: 2rem;
+    }
+}
+
+#nossa-infraestrutura {
+    background-color: var(--prata-base);
+
+    & .interface {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    & h5 {
+        font-size: 4rem;
+        color: var(--azul-base);
+    }
+
+    & .container-cards {
+        display: flex;
+        gap: 3rem;
+
+        & article {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--branco);
+            border-radius: 1rem;
+            width: 33.33%;
+            overflow: hidden;
+
+            & img {
+                object-fit: cover;
+                height: 25rem;
+                width: 100%;
+            }
+
+            & .txt-container {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1.5rem;
+
+                & .titulo {
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                }
+
+                & .descricao {
+                    color: var(--cinza-texto-base);
+                    font-size: 1.7rem;
+                }
+            }
+        }
+    }
+}
+
+#visita {
+    & .container-visita {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5rem 2rem;
+        gap: 2rem;
+        border-radius: 1rem;
+        background: linear-gradient(303deg, rgba(178, 0, 0, 0.17) 40%, rgba(30, 58, 138, 0.17) 83%);
+
+        & h6 {
+            font-size: 3.5rem;
+        }
+
+        & p {
+            font-size: 2rem;
+            width: 60%;
+            text-align: center;
+            color: var(--cinza-texto-base);
+        }
+    }
+}
