@@ -1,14 +1,20 @@
-.hero {
-  & .interface {
-    & .conteudo {
-    }
-
-    & .imagem {
-    }
-  }
-}
-
 .contato {
   & .interface {
+    flex-direction: column;
+    gap: 3rem;
+    & h2 {
+      font-size: 3.5rem;
+      color: var(--azul-base);
+    }
+
+    & p {
+      font-size: 2rem;
+      color: var(--cinza-texto-base);
+    }
+
+    & nav {
+      display: flex;
+      gap: 1.5rem;
+    }
   }
 }

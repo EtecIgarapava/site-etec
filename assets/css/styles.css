@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 /* geral */
 * {
   box-sizing: border-box;
@@ -25,8 +26,6 @@ html {
   align-items: center;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-
 /* variaveis */
 :root {
   /* cores principais */
@@ -51,6 +50,7 @@ html {
   --cinza-hover: #e6e6e6;
   --prata-base: #f8f8f8;
   --branco: #ffffff;
+  --preto: #000000;
 
   /* cores de feedback */
   --cancelado: #d32719;
@@ -136,7 +136,7 @@ header {
 }
 /* Footer */
 footer {
-  background-color: white;
+  background-color: var(--preto);
   width: 100%;
 
   & .interface {
@@ -144,7 +144,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0;
+    padding: 1% 0;
 
     & .container {
       display: flex;
@@ -154,16 +154,14 @@ footer {
       padding: 1rem 0rem;
 
       & .titulo {
-        color: var(--azul-base);
-        font-family: "Roboto", sans-serif;
+        color: var(--azul-destaque-base);
         font-size: 2rem;
         font-weight: bold;
         margin-bottom: 1rem;
       }
 
       & .descricao {
-        color: var(--cinza-texto-base);
-        font-family: "Roboto", sans-serif;
+        color: var(--branco);
         font-size: 1.7rem;
         text-align: left;
       }
@@ -177,8 +175,7 @@ footer {
         & ul {
           & li {
             list-style: none;
-            color: var(--cinza-texto-base);
-            font-family: "Roboto", sans-serif;
+            color: var(--branco);
             font-size: 1.7rem;
             display: flex;
             align-items: center;
@@ -187,7 +184,7 @@ footer {
 
             & i {
               font-size: 2.2rem;
-              color: var(--vermelho-base);
+              color: var(--azul-base);
             }
           }
         }
@@ -198,7 +195,6 @@ footer {
           & ul {
             & li {
               list-style: none;
-              font-family: "Roboto", sans-serif;
               font-size: 1.7rem;
               display: flex;
               align-items: center;
@@ -206,7 +202,7 @@ footer {
               margin: 1rem 0rem;
 
               & a {
-                color: var(--cinza-texto-base);
+                color: var(--branco);
                 text-decoration: none;
                 font-size: 1.7rem;
               }
@@ -220,7 +216,7 @@ footer {
           gap: 2rem;
           & i {
             font-size: 3rem;
-            color: var(--vermelho-base);
+            color: var(--azul-base);
             gap: 1rem;
           }
 
@@ -238,7 +234,7 @@ footer {
       justify-content: center;
       padding: 2rem;
       & p {
-        color: var(--cinza-texto-base);
+        color: var(--branco);
         font-size: 1.7rem;
         margin-top: 1rem;
       }
@@ -251,13 +247,16 @@ footer {
   color: var(--branco);
   text-decoration: none;
   background-color: var(--vermelho-base);
-  padding: 0.7rem 2rem;
-  font-family: "Roboto", sans-serif;
+  padding: 1rem 2rem;
   font-size: 1.7rem;
   text-align: left;
 
   & span {
     margin-right: 1rem;
+  }
+
+  &:hover {
+    background-color: var(--vermelho-escuro);
   }
 }
 
@@ -265,12 +264,15 @@ footer {
   color: var(--branco);
   text-decoration: none;
   background-color: var(--azul-base);
-  padding: 0.7rem 2rem;
-  font-family: "Roboto", sans-serif;
+  padding: 1rem 2rem;
   font-size: 1.7rem;
   text-align: left;
 
   & span {
     margin-right: 1rem;
+  }
+
+  &:hover {
+    background-color: var(--primario-titulos-hover);
   }
 }
