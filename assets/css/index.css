@@ -1,4 +1,4 @@
-.hero {
+#hero {
   width: 100%;
   height: 100vh;
   background-color: var(--branco);
@@ -12,6 +12,7 @@
       flex-direction: column;
       gap: 3rem;
       width: 50%;
+
       & h1 {
         font-size: 7rem;
         color: var(--azul-base);
@@ -42,12 +43,14 @@
   }
 }
 
-.acesso-rapido {
+#acesso-rapido {
   width: 100%;
   background-color: var(--cinza-claro);
+
   & .interface {
     flex-direction: column;
     padding: 3% 0;
+
     & h2 {
       font-size: 3rem;
       color: var(--azul-base);
@@ -98,6 +101,7 @@
         & .link {
           font-size: 1.7rem;
           color: var(--azul-base);
+
           & span {
             padding-right: 1rem;
           }
@@ -107,12 +111,73 @@
   }
 }
 
-.cursos {
+#historia {
   width: 100%;
-  background-color: var(--cinza-claro);
+  background-color: var(--branco);
+
   & .interface {
     flex-direction: column;
     padding: 3% 0;
+
+    & .conteudo {
+      width: 100%;
+      display: flex;
+
+      & .informacoes {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        & h3 {
+          font-size: 3rem;
+          color: var(--azul-base);
+        }
+
+        & p {
+          font-size: 1.7rem;
+          color: var(--cinza-texto-base);
+        }
+
+        & .container {
+          & .icone {}
+
+          & .titulo {}
+
+          & .descricao {}
+
+
+        }
+      }
+
+      & .imagem {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+
+        & img {
+          width: 95%;
+          height: 80%;
+          border-radius: 1rem;
+        }
+      }
+    }
+
+
+  }
+}
+
+
+
+#cursos {
+  width: 100%;
+  background-color: var(--cinza-claro);
+
+  & .interface {
+    flex-direction: column;
+    padding: 3% 0;
+
     & .link {
       width: 100%;
       display: flex;
@@ -131,10 +196,12 @@
     }
   }
 }
-.contato {
+
+#contato {
   & .interface {
     flex-direction: column;
     gap: 3rem;
+
     & h2 {
       font-size: 3.5rem;
       color: var(--azul-base);
