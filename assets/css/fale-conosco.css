@@ -1,0 +1,29 @@
+#formulario {
+    & .interface {
+
+        & form {
+            background-color: var(--cinza-claro);
+
+            & .form-grid {
+                & .form-group {
+                    & label {}
+
+                    & input {
+                        background-color: var(--branco);
+                        border: 5px solid var(--cinza-claro);
+                    }
+                }
+            }
+
+            & .form-group {
+                & label {}
+
+                & input {}
+            }
+
+            & .btn-vermelho {
+                border: none;
+            }
+        }
+    }
+}

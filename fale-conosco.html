@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/22f994e04b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/fale-conosco.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>ETEC - Fale Conosco</title>
 </head>
@@ -39,8 +40,69 @@
     </header>
     <section id="titulo">
         <div class="interface">
-            <h1>Nossos Cursos</h1>
-            <p>Formação técnica de qualidade para impulsionar sua carreira</p>
+            <h1>Fale Conosco</h1>
+            <p>Tem alguma dúvida, sugestão ou gostaria de entrar em contato conosco? Preencha o formulário abaixo e
+                retornaremos o mais breve possível.</p>
+        </div>
+    </section>
+    <section id="formulario">
+        <div class="interface">
+            <div>
+                <h2>Informações de Contato</h2>
+                <p class="titulo">
+                    Endereço:
+                </p>
+                <p class="descricao">
+                    Av. Lúcia Gonçalves Vianna, 951 - Conjunto Habitacional Antonio Pedro Ortolan, Igarapava - SP,
+                    14540-000
+                </p>
+                <p class="titulo">Telefone:</p>
+                <p class="descricao">(16) 3172-1814</p>
+                <p class="titulo">Email:</p>
+                <p class="descricao">e160acad@cps.sp.gov.br</p>
+                <h3>Horário de Atendimento</h3>
+
+
+
+
+
+
+
+
+                Segunda a Sexta:
+                08:00 - 22:00
+                Sábado:
+                08:00 - 12:00
+                Domingo:
+                Fechado
+            </div>
+            <form action="" method="">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="nome">Nome completo <span>*</span></label>
+                        <input type="text" name="nome" id="nome" placeholder="Seu nome completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail <span>*</span></label>
+                        <input type="email" name="email" id="email" placeholder="seu.email@exemplo.com" required>
+                    </div>
+                </div>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="telefone">Telefone(Opicional)</label>
+                        <input type="text" name="telefone" id="telefone" placeholder="(xx) xxxxx-xxxx">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="assunto">Assunto <span>*</span></label>
+                    <input type="text" name="assunto" id="assunto" placeholder="Assunto da mensagem" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <input type="text" name="mensagem" id="mensagem" placeholder="Digite sua mensagem aqui" required>
+                </div>
+                <input type="submit" class="btn-vermelho">
+            </form>
         </div>
     </section>
     <script src="assets/js/btn-header.js"></script>
