@@ -1,28 +1,129 @@
 #formulario {
     & .interface {
+        flex-direction: column;
+        padding: 2% 0%;
+
+        & .informacoes {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            width: 60%;
+            margin-bottom: 5rem;
+
+            & .contato {
+                & h2 {
+                    font-size: 2rem;
+                    color: var(--azul-base);
+                }
+
+                & .titulo {
+                    color: var(--cinza-texto-base);
+                    font-weight: bold;
+                    font-size: 1.7rem;
+
+                }
+
+                & .descricao {
+                    color: var(--cinza-texto-base);
+                    font-size: 1.7rem;
+
+                }
+            }
+
+            & .horario {
+                & h3 {
+                    font-size: 2rem;
+                    color: var(--azul-base);
+                }
+
+                & .titulo {
+                    color: var(--cinza-texto-base);
+                    font-weight: bold;
+                    font-size: 1.7rem;
+
+                }
+
+                & .descricao {
+                    color: var(--cinza-texto-base);
+                    font-size: 1.7rem;
+
+                }
+            }
+        }
 
         & form {
             background-color: var(--cinza-claro);
+            width: 70%;
+            border-radius: 1rem;
+            padding: 3rem;
+
+            & span {
+                color: var(--vermelho-base);
+            }
 
             & .form-grid {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                margin-bottom: 3rem;
+
                 & .form-group {
-                    & label {}
+                    display: flex;
+                    flex-direction: column;
+                    width: 50%;
+
+
+                    & label {
+                        color: var(--cinza-texto-base);
+                        font-size: 1.7rem;
+                        margin-bottom: 1rem;
+                    }
 
                     & input {
                         background-color: var(--branco);
                         border: 5px solid var(--cinza-claro);
+                        padding: 1rem;
+                        border-radius: 1rem;
+                        border: 1px solid rgb(119, 119, 119);
+                        width: 95%;
+                        font-size: 1.7rem;
+
+                        &:focus {
+                            outline: 1px solid var(--vermelho-base);
+                        }
                     }
                 }
             }
 
-            & .form-group {
-                & label {}
+            & .form-group-mensagem {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 3rem;
 
-                & input {}
+                & label {
+                    color: var(--cinza-texto-base);
+                    font-size: 1.7rem;
+                    margin-bottom: 1rem;
+                }
+
+                & textarea {
+                    background-color: var(--branco);
+                    border: 5px solid var(--cinza-claro);
+                    padding: 1rem;
+                    border-radius: 1rem;
+                    border: 1px solid rgb(119, 119, 119);
+                    font-size: 1.7rem;
+
+                    &:focus {
+                        outline: 1px solid var(--vermelho-base);
+                    }
+                }
             }
 
             & .btn-vermelho {
                 border: none;
+                width: 100%;
+                text-align: center;
             }
         }
     }
