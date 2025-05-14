@@ -121,6 +121,31 @@ header {
         font-size: 1.8rem;
         cursor: pointer;
         transition: 0.3s ease all;
+        position: relative;
+
+        & #menu-links {
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          right: 0;
+          background-color: var(--branco);
+          height: max-content;
+          width: max-content;
+          box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+          & a {
+            color: var(--cinza-texto-base);
+            padding: 1rem;
+
+            &:hover {
+              background-color: var(--cinza-hover);
+            }
+          }
+        }
+
+        & #menu-links.ativo {
+          display: flex;
+        }
 
         &:hover {
           color: var(--cinza-claro);

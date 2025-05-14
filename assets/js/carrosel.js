@@ -1,10 +1,16 @@
 const swiper = new Swiper('.swiper', {
     // Geral
     loop: true,
-    slidesPerView: 2,
-    spaceBetween: 0,
+    slidesPerView: 3,
+    spaceBetween: 20,
     autoplay: {
         delay: 5000,
+    },
+
+    effect: 'coverflow',
+    coverflowEffect: {
+        rotate: 0,
+        slideShadows: true,
     },
 
     // Paginação
