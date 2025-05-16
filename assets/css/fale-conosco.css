@@ -8,6 +8,8 @@
             align-items: baseline;
             width: 60%;
             margin-bottom: 5rem;
+            flex-direction: column;
+            gap: 2rem;
 
             & .contato {
                 & h2 {
@@ -15,17 +17,13 @@
                     color: var(--azul-base);
                 }
 
-                & .titulo {
-                    color: var(--cinza-texto-base);
+                & span {
                     font-weight: bold;
-                    font-size: 1.7rem;
-
                 }
 
-                & .descricao {
+                & p {
                     color: var(--cinza-texto-base);
                     font-size: 1.7rem;
-
                 }
             }
 
@@ -35,17 +33,13 @@
                     color: var(--azul-base);
                 }
 
-                & .titulo {
-                    color: var(--cinza-texto-base);
+                & span {
                     font-weight: bold;
-                    font-size: 1.7rem;
-
                 }
 
-                & .descricao {
+                & p {
                     color: var(--cinza-texto-base);
                     font-size: 1.7rem;
-
                 }
             }
         }
