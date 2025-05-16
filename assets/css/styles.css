@@ -303,6 +303,7 @@ footer {
   width: max-content;
   font-size: 1.7rem;
   text-align: left;
+  cursor: pointer;
 
   & span {
     margin-right: 1rem;

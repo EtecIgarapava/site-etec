@@ -1,6 +1,5 @@
 #formulario {
     & .interface {
-        flex-direction: column;
         padding: 2% 0%;
 
         & .informacoes {
