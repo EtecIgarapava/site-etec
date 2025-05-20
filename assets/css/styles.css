@@ -52,6 +52,7 @@ html {
   --cinza-claro: #dadada;
   --cinza-hover: #e6e6e6;
   --prata-base: #f8f8f8;
+  --cinza-escuro: #1F1F1F;
   --branco: #ffffff;
   --preto: #000000;
 
@@ -176,7 +177,7 @@ header {
 
 /* Footer */
 footer {
-  background-color: var(--preto);
+  background-color: var(--cinza-escuro);
   width: 100%;
 
   & .interface {
@@ -194,7 +195,7 @@ footer {
       padding: 1rem 0rem;
 
       & .titulo {
-        color: var(--azul-destaque-base);
+        color: var(--azul-base);
         font-size: 2rem;
         font-weight: bold;
         margin-bottom: 1rem;
@@ -263,7 +264,7 @@ footer {
           }
 
           & i:hover {
-            color: var(--vermelho-escuro);
+            color: var(--primario-titulos-hover);
           }
         }
       }
@@ -274,13 +275,30 @@ footer {
       width: 100%;
       display: flex;
       align-items: center;
-      justify-content: center;
-      padding: 2rem;
+      justify-content: space-between;
+      padding: 2rem 0rem;
 
-      & p {
-        color: var(--branco);
-        font-size: 1.7rem;
-        margin-top: 1rem;
+      & div {
+        & p {
+          color: var(--branco);
+          font-size: 2rem;
+          margin-top: 1rem;
+          font-weight: bold;
+
+          a {
+            color: var(--azul-destaque-base);
+
+            & a:hover {
+              color: var(--secundario-hover);
+            }
+          }
+
+        }
+      }
+
+      & img {
+        width: 670px;
+        height: 100px;
       }
     }
   }
