@@ -70,8 +70,11 @@ html {
 
 /* header */
 header {
+  position: sticky;
+  top: 0;
   height: 10em;
   background-color: var(--vermelho-base);
+  z-index: 500;
 
   & .interface {
     justify-content: space-between;
