@@ -52,7 +52,7 @@ html {
   --cinza-claro: #dadada;
   --cinza-hover: #e6e6e6;
   --prata-base: #f8f8f8;
-  --cinza-escuro: #1F1F1F;
+  --cinza-escuro: #1f1f1f;
   --branco: #ffffff;
   --preto: #000000;
 
@@ -135,7 +135,8 @@ header {
           background-color: var(--branco);
           height: max-content;
           width: max-content;
-          box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+            rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 
           & a {
             color: var(--cinza-texto-base);
@@ -295,7 +296,6 @@ footer {
               color: var(--secundario-hover);
             }
           }
-
         }
       }
 
@@ -341,5 +341,57 @@ footer {
 
   &:hover {
     background-color: var(--primario-titulos-hover);
+  }
+}
+
+/* Menu Mobile */
+#buttonSidebar {
+  display: none;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+
+  & a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+
+    &:hover {
+      color: #f1f1f1;
+    }
+  }
+
+  & .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+}
+@media (max-width: 1023px) {
+  header {
+    & .menu {
+      padding: 0 4%;
+      & nav {
+        display: none;
+      }
+    }
+  }
+  #buttonSidebar {
+    display: block;
   }
 }

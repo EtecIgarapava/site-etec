@@ -177,10 +177,7 @@
               font-size: 1.7rem;
               color: var(--cinza-texto-base);
             }
-
           }
-
-
         }
       }
 
@@ -197,12 +194,8 @@
         }
       }
     }
-
-
   }
 }
-
-
 
 #cursos {
   width: 100%;
@@ -285,11 +278,9 @@
                 font-size: 1.7rem;
               }
             }
-
           }
         }
       }
-
     }
   }
 }
@@ -312,6 +303,70 @@
     & nav {
       display: flex;
       gap: 2rem;
+    }
+  }
+}
+
+/* responsividade */
+
+@media (max-width: 1023px) {
+  #hero {
+    height: auto;
+    width: 100%;
+    padding: 0 4%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    & .interface {
+      flex-direction: column-reverse;
+      padding: 0rem;
+      height: auto;
+
+      & .imagem {
+        width: auto;
+        & img {
+          max-width: 100%;
+          max-height: 100%;
+          object-fit: contain;
+          height: 25rem;
+        }
+      }
+
+      & .conteudo {
+        width: 100%;
+        height: auto;
+        & h1 {
+          font-size: 4rem;
+          text-align: center;
+          width: 100%;
+        }
+        & p {
+          text-align: justify;
+          width: 100%;
+        }
+        & nav {
+          justify-content: space-between;
+          display: flex;
+          flex-direction: column;
+
+          & .btn-vermelho {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 5rem;
+          }
+
+          & .btn-azul {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 5rem;
+            margin-top: -2rem;
+          }
+        }
+      }
     }
   }
 }

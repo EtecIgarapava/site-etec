@@ -1,150 +1,224 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/22f994e04b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/fale-conosco.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/22f994e04b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="assets/css/fale-conosco.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <title>ETEC - Fale Conosco</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="interface">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="assets/img/logo.png" alt="Logo Etec">
-                </a>
-            </div>
-            <div class="menu">
-                <nav>
-                    <a href="index.html">Início</a>
-                    <a href="quem-somos.html">Quem Somos</a>
-                    <a href="cursos.html">Cursos</a>
-                    <a href="projetos.html">Projetos</a>
-                    <a href="galeria.html">Galeria de Fotos</a>
-                    <a href="fale-conosco.html">Fale Conosco</a>
-                    <button id="btn-links">
-                        Links Externos <span><i class="fa-solid fa-chevron-down"></i></span>
-                        <div id="menu-links">
-                            <a href="https://nsa.cps.sp.gov.br/" target="_blank">NSA</a>
-                            <a href="https://login.live.com/" target="_blank">Email Institucional</a>
-                        </div>
-                    </button>
-                </nav>
-            </div>
+      <div class="interface">
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/img/logo.png" alt="Logo Etec" />
+          </a>
         </div>
+        <div class="menu">
+          <nav>
+            <a href="index.html">Início</a>
+            <a href="quem-somos.html">Quem Somos</a>
+            <a href="cursos.html">Cursos</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="galeria.html">Galeria de Fotos</a>
+            <a href="fale-conosco.html">Fale Conosco</a>
+            <button id="btn-links">
+              Links Externos
+              <span><i class="fa-solid fa-chevron-down"></i></span>
+              <div id="menu-links">
+                <a href="https://nsa.cps.sp.gov.br/" target="_blank">NSA</a>
+                <a href="https://login.live.com/" target="_blank"
+                  >Email Institucional</a
+                >
+              </div>
+            </button>
+          </nav>
+
+          <!-- Menu Mobile -->
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
+            <a href="index.html">Inicio</a>
+            <a href="quem-somos.html">QuemSomos</a>
+            <a href="cursos.html">Cursos</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="galeria.html">Galeria de Fotos</a>
+            <a href="fale-conosco.html">Fale Conosco</a>
+            <a href="https://nsa.cps.sp.gov.br/">Links Externos</a>
+            <a href="https://login.live.com/">Entrar</a>
+          </div>
+          <span
+            id="buttonSidebar"
+            style="font-size: 30px; cursor: pointer"
+            onclick="openNav()"
+            >&#9776;</span
+          >
+        </div>
+      </div>
     </header>
     <section id="titulo">
-        <div class="interface">
-            <h1>Fale Conosco</h1>
-            <p>Tem alguma dúvida, sugestão ou gostaria de entrar em contato conosco? Preencha o formulário abaixo e
-                retornaremos o mais breve possível.</p>
-        </div>
+      <div class="interface">
+        <h1>Fale Conosco</h1>
+        <p>
+          Tem alguma dúvida, sugestão ou gostaria de entrar em contato conosco?
+          Preencha o formulário abaixo e retornaremos o mais breve possível.
+        </p>
+      </div>
     </section>
     <section id="formulario">
-        <div class="interface">
-            <div class="informacoes">
-                <div class="contato">
-                    <h2>Informações de Contato</h2>
-                    <p><span>Endereço:</span> Av. Lúcia Gonçalves Vianna, 951 - Conjunto Habitacional Antonio Pedro
-                        Ortolan, Igarapava - SP, 14540-000
-                    </p>
-                    <p><span>Telefone:</span> (16) 3172-1814</p>
-                    <p><span>Email:</span> e160acad@cps.sp.gov.br</p>
-                </div>
-                <div class="horario">
-                    <h3>Horário de Atendimento</h3>
-                    <p><span>Segunda a sexta:</span> 07:00 - 23:00</p>
-                    <p><span>Sábado e domingo:</span> Fechado</p>
-                </div>
-            </div>
-            <form action="" method="">
-                <div class="form-grid">
-                    <div class="form-group">
-                        <label for="nome">Nome completo <span>*</span></label>
-                        <input type="text" name="nome" id="nome" placeholder="Seu nome completo" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">E-mail <span>*</span></label>
-                        <input type="email" name="email" id="email" placeholder="seu.email@exemplo.com" required>
-                    </div>
-                </div>
-                <div class="form-grid">
-                    <div class="form-group">
-                        <label for="telefone">Telefone(Opicional)</label>
-                        <input type="text" name="telefone" id="telefone" placeholder="(xx) xxxxx-xxxx">
-                    </div>
-                    <div class="form-group">
-                        <label for="assunto">Assunto <span>*</span></label>
-                        <input class="assunto" type="text" name="assunto" id="assunto" placeholder="Assunto da mensagem"
-                            required>
-                    </div>
-                </div>
-                <div class="form-group-mensagem">
-                    <label for="mensagem">Mensagem <span>*</span></label>
-                    <textarea id="mensagem" name="mensagem" rows="10" cols="50"
-                        placeholder="Digite sua mensagem aqui..."></textarea>
-                </div>
-                <input type="submit" class="btn-vermelho" value="Enviar Mesagem">
-            </form>
+      <div class="interface">
+        <div class="informacoes">
+          <div class="contato">
+            <h2>Informações de Contato</h2>
+            <p>
+              <span>Endereço:</span> Av. Lúcia Gonçalves Vianna, 951 - Conjunto
+              Habitacional Antonio Pedro Ortolan, Igarapava - SP, 14540-000
+            </p>
+            <p><span>Telefone:</span> (16) 3172-1814</p>
+            <p><span>Email:</span> e160acad@cps.sp.gov.br</p>
+          </div>
+          <div class="horario">
+            <h3>Horário de Atendimento</h3>
+            <p><span>Segunda a sexta:</span> 07:00 - 23:00</p>
+            <p><span>Sábado e domingo:</span> Fechado</p>
+          </div>
         </div>
+        <form action="" method="">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="nome">Nome completo <span>*</span></label>
+              <input
+                type="text"
+                name="nome"
+                id="nome"
+                placeholder="Seu nome completo"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail <span>*</span></label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="seu.email@exemplo.com"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="telefone">Telefone(Opicional)</label>
+              <input
+                type="text"
+                name="telefone"
+                id="telefone"
+                placeholder="(xx) xxxxx-xxxx"
+              />
+            </div>
+            <div class="form-group">
+              <label for="assunto">Assunto <span>*</span></label>
+              <input
+                class="assunto"
+                type="text"
+                name="assunto"
+                id="assunto"
+                placeholder="Assunto da mensagem"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group-mensagem">
+            <label for="mensagem">Mensagem <span>*</span></label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="10"
+              cols="50"
+              placeholder="Digite sua mensagem aqui..."
+            ></textarea>
+          </div>
+          <input type="submit" class="btn-vermelho" value="Enviar Mesagem" />
+        </form>
+      </div>
     </section>
     <footer>
-        <div class="interface">
-            <div class="container">
-                <article class="escola">
-                    <p class="titulo">ETEC Antônio Junqueira da Veiga</p>
-                    <p class="descricao">Instituição de ensino técnico e médio comprometida com a educação de qualidade
-                        e formação
-                        profissional dos nossos alunos.</p>
-                </article>
-                <article class="contato">
-                    <p class="titulo">Contato</p>
-                    <ul>
-                        <li><i class="fa-solid fa-location-dot"></i>Fazenda Baixada, s/n°, Zona Rural. Caixa Postal 68,
-                            Igarapava
-                            14540000.</li>
-                        <li><i class="fa-solid fa-phone"></i>(16) 3172-1814</li>
-                        <li><i class="fa-solid fa-envelope"></i>emailteste@gmail.com</li>
-                        <li><i class="fa-solid fa-clock"></i>Seg - Sex: 7:00 - 23:00</li>
-                    </ul>
-                </article>
-                <article class="links-rapidos">
-                    <p class="titulo">Links Rápidos</p>
-                    <nav>
-                        <ul>
-                            <li><a href="quem-somos.html">Quem somos</a></li>
-                            <li><a href="cursos.html">Cursos</a></li>
-                            <li><a href="projetos.html">Projetos</a></li>
-                            <li><a href="fale-conosco.html">Entre em contato</a></li>
-                            <li><a href="https://vestibulinho.etec.sp.gov.br/">Vestibulinho</a></li>
-                        </ul>
-                    </nav>
-                </article>
-                <article class="redes-sociais">
-                    <p class="titulo">Redes Sociais</p>
-                    <nav>
-                        <a href=""><i class="fa-brands fa-facebook"></i></a>
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-youtube"></i></a>
-                    </nav>
-                </article>
-            </div>
-            <div class="direitos">
-                <div>
-                    <p>© 2025 ETEC Antônio Junqueira da Veiga. Todos os direitos reservados.</p>
-                    <p>Desenvolvido por <a href="https://leandroarantes.com.br/" target="_blank">Leandro</a>, <a
-                            href="">Ruan</a>
-                        e <a href="https://www.walysson.com.br/" target="_blank">Walysson</a>.</p>
-                </div>
-                <img src="assets/img/Logotipos/logo_55anos_cps_horizontal_br.png" alt="Logotipo do Centro Paula Souza">
-            </div>
+      <div class="interface">
+        <div class="container">
+          <article class="escola">
+            <p class="titulo">ETEC Antônio Junqueira da Veiga</p>
+            <p class="descricao">
+              Instituição de ensino técnico e médio comprometida com a educação
+              de qualidade e formação profissional dos nossos alunos.
+            </p>
+          </article>
+          <article class="contato">
+            <p class="titulo">Contato</p>
+            <ul>
+              <li>
+                <i class="fa-solid fa-location-dot"></i>Fazenda Baixada, s/n°,
+                Zona Rural. Caixa Postal 68, Igarapava 14540000.
+              </li>
+              <li><i class="fa-solid fa-phone"></i>(16) 3172-1814</li>
+              <li><i class="fa-solid fa-envelope"></i>emailteste@gmail.com</li>
+              <li><i class="fa-solid fa-clock"></i>Seg - Sex: 7:00 - 23:00</li>
+            </ul>
+          </article>
+          <article class="links-rapidos">
+            <p class="titulo">Links Rápidos</p>
+            <nav>
+              <ul>
+                <li><a href="quem-somos.html">Quem somos</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="fale-conosco.html">Entre em contato</a></li>
+                <li>
+                  <a href="https://vestibulinho.etec.sp.gov.br/"
+                    >Vestibulinho</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </article>
+          <article class="redes-sociais">
+            <p class="titulo">Redes Sociais</p>
+            <nav>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </nav>
+          </article>
         </div>
+        <div class="direitos">
+          <div>
+            <p>
+              © 2025 ETEC Antônio Junqueira da Veiga. Todos os direitos
+              reservados.
+            </p>
+            <p>
+              Desenvolvido por
+              <a href="https://leandroarantes.com.br/" target="_blank"
+                >Leandro</a
+              >, <a href="">Ruan</a> e
+              <a href="https://www.walysson.com.br/" target="_blank">Walysson</a
+              >.
+            </p>
+          </div>
+          <img
+            src="assets/img/Logotipos/logo_55anos_cps_horizontal_br.png"
+            alt="Logotipo do Centro Paula Souza"
+          />
+        </div>
+      </div>
     </footer>
     <script src="assets/js/btn-header.js"></script>
-</body>
-
+    <script src="assets/js/menuMobile.js"></script>
+  </body>
 </html>
