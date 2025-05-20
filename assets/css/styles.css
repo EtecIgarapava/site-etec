@@ -152,29 +152,21 @@ header {
         }
       }
     }
-
-    & button {
-      background-color: transparent;
-      border: none;
-      color: var(--branco);
-      font-size: 1.8rem;
-      cursor: pointer;
-    }
   }
 }
 
 /* titulo */
 #titulo {
-  height: 20rem;
   background-color: var(--cinza-claro);
 
   & .interface {
     flex-direction: column;
     gap: 2rem;
+    padding: 1% 0;
   }
 
   & h1 {
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
 
   & p {
