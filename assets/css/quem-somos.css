@@ -238,6 +238,9 @@
     & .interface {
       padding: 2rem 0;
     }
+    & p {
+      text-align: justify;
+    }
   }
 
   /* NOSSA HISTORIA */
@@ -264,6 +267,7 @@
       }
       & span {
         left: 50%;
+        width: max-content;
         transform: translate(-50%, 0);
       }
     }

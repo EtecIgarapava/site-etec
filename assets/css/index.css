@@ -484,6 +484,11 @@
     & .interface {
       padding: 2rem 0;
 
+      & h5 {
+        font-size: 3rem;
+        text-align: center;
+      }
+
       & nav {
         flex-direction: column;
         width: 100%;
