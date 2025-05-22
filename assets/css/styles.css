@@ -72,7 +72,7 @@ html {
 header {
   position: sticky;
   top: 0;
-  height: 10em;
+  height: 8rem;
   background-color: var(--vermelho-base);
   z-index: 500;
 
@@ -83,10 +83,8 @@ header {
   }
 
   & .logo {
-    width: 14rem;
-
     & img {
-      width: 100%;
+      width: 10rem;
     }
   }
 
