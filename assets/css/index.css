@@ -310,7 +310,8 @@
 /* responsividade */
 
 @media (max-width: 1023px) {
-  /* Hero */
+  /* HERO */
+
   #hero {
     height: auto;
     width: 100%;
@@ -369,7 +370,7 @@
     }
   }
 
-  /* Acesso Rapido */
+  /* ACESSO RAPIDO */
 
   #acesso-rapido {
     padding: 0 4%;
@@ -384,7 +385,7 @@
     }
   }
 
-  /* Historia */
+  /* HISTORIA */
 
   #historia {
     padding: 0 4%;
@@ -408,8 +409,10 @@
           & .container {
             display: flex;
             align-items: center;
+            & .icone {
+              padding: 2.5rem;
+            }
           }
-
           & .btn-vermelho {
             display: flex;
             justify-content: center;
@@ -417,15 +420,20 @@
             width: 100%;
             height: 5rem;
           }
-
           & p {
+            font-size: 2rem;
             width: 100%;
             text-align: justify;
+          }
+          & h3 {
+            text-align: center;
           }
         }
       }
     }
   }
+
+  /* CURSOS */
 
   #cursos {
     padding: 0 4%;
@@ -461,7 +469,7 @@
     }
   }
 
-  /* Contato  */
+  /* CONTATO  */
 
   #contato {
     padding: 0 4%;

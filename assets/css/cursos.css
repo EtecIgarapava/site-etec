@@ -246,6 +246,8 @@
 }
 
 @media (max-width: 1023px) {
+  /* TITULO */
+
   #titulo {
     padding: 0 4%;
     & .interface {
@@ -255,6 +257,8 @@
       text-align: justify;
     }
   }
+
+  /* CURSOS */
 
   #cursos {
     padding: 0 4%;
@@ -269,6 +273,8 @@
       grid-template-columns: 1fr;
     }
   }
+
+  /* SELETIVO */
 
   #seletivo {
     padding: 0 4%;
@@ -297,6 +303,8 @@
     }
   }
 
+  /* VESTIBULINHO */
+
   #vestibulinho {
     padding: 0 4%;
     .interface {
@@ -319,6 +327,7 @@
         justify-content: center;
         align-items: center;
         width: 100%;
+        height: 5rem;
         gap: 1rem;
       }
       & .btn-azul {
@@ -326,6 +335,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 5rem;
         gap: 1rem;
       }
     }

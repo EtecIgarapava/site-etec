@@ -431,6 +431,9 @@ footer {
         & .descricao {
           text-align: justify;
         }
+        & .links-rapidos {
+          display: none;
+        }
       }
 
       & .direitos {
