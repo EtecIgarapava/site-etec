@@ -397,6 +397,7 @@ footer {
           color: #818181;
           display: block;
           transition: 0.3s;
+          width: 100%;
 
           &:hover {
             color: #f1f1f1;
