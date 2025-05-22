@@ -285,6 +285,7 @@
     & .txt-seletivo {
       width: 100%;
       & .btn-vermelho {
+        height: 5rem;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -311,7 +312,10 @@
       padding: 2rem 0;
     }
     & .container-vestibulinho {
+      padding: 2rem 2rem;
       & .container-btn {
+        gap: 1rem;
+        width: 100%;
         flex-direction: column;
       }
       & p {

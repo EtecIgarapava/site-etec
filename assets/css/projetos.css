@@ -187,6 +187,7 @@
     & .interface {
       padding: 2rem 0;
       & .container-contato {
+        padding: 2rem 2rem;
         & p {
           width: 100%;
           text-align: justify;

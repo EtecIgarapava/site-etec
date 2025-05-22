@@ -1,124 +1,170 @@
 #formulario {
-    & .interface {
-        padding: 2% 0%;
+  & .interface {
+    padding: 2% 0%;
 
-        & .informacoes {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            width: 60%;
-            margin-bottom: 5rem;
-            flex-direction: column;
-            gap: 2rem;
+    & .informacoes {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      width: 60%;
+      margin-bottom: 5rem;
+      flex-direction: column;
+      gap: 2rem;
 
-            & .contato {
-                & h2 {
-                    font-size: 2rem;
-                    color: var(--azul-base);
-                }
-
-                & span {
-                    font-weight: bold;
-                }
-
-                & p {
-                    color: var(--cinza-texto-base);
-                    font-size: 1.7rem;
-                }
-            }
-
-            & .horario {
-                & h3 {
-                    font-size: 2rem;
-                    color: var(--azul-base);
-                }
-
-                & span {
-                    font-weight: bold;
-                }
-
-                & p {
-                    color: var(--cinza-texto-base);
-                    font-size: 1.7rem;
-                }
-            }
+      & .contato {
+        & h2 {
+          font-size: 2rem;
+          color: var(--azul-base);
         }
 
-        & form {
-            background-color: var(--cinza-claro);
-            width: 70%;
-            border-radius: 1rem;
-            padding: 3rem;
-
-            & span {
-                color: var(--vermelho-base);
-            }
-
-            & .form-grid {
-                display: flex;
-                justify-content: space-between;
-                width: 100%;
-                margin-bottom: 3rem;
-
-                & .form-group {
-                    display: flex;
-                    flex-direction: column;
-                    width: 50%;
-
-
-                    & label {
-                        color: var(--cinza-texto-base);
-                        font-size: 1.7rem;
-                        margin-bottom: 1rem;
-                    }
-
-                    & input {
-                        background-color: var(--branco);
-                        border: 5px solid var(--cinza-claro);
-                        padding: 1rem;
-                        border-radius: 1rem;
-                        border: 1px solid rgb(119, 119, 119);
-                        width: 95%;
-                        font-size: 1.7rem;
-
-                        &:focus {
-                            outline: 1px solid var(--vermelho-base);
-                        }
-                    }
-                }
-            }
-
-            & .form-group-mensagem {
-                display: flex;
-                flex-direction: column;
-                margin-bottom: 3rem;
-
-                & label {
-                    color: var(--cinza-texto-base);
-                    font-size: 1.7rem;
-                    margin-bottom: 1rem;
-                }
-
-                & textarea {
-                    background-color: var(--branco);
-                    border: 5px solid var(--cinza-claro);
-                    padding: 1rem;
-                    border-radius: 1rem;
-                    border: 1px solid rgb(119, 119, 119);
-                    font-size: 1.7rem;
-                    resize: none;
-
-                    &:focus {
-                        outline: 1px solid var(--vermelho-base);
-                    }
-                }
-            }
-
-            & .btn-vermelho {
-                border: none;
-                width: 100%;
-                text-align: center;
-            }
+        & span {
+          font-weight: bold;
         }
+
+        & p {
+          color: var(--cinza-texto-base);
+          font-size: 1.7rem;
+        }
+      }
+
+      & .horario {
+        & h3 {
+          font-size: 2rem;
+          color: var(--azul-base);
+        }
+
+        & span {
+          font-weight: bold;
+        }
+
+        & p {
+          color: var(--cinza-texto-base);
+          font-size: 1.7rem;
+        }
+      }
     }
+
+    & form {
+      background-color: var(--cinza-claro);
+      width: 70%;
+      border-radius: 1rem;
+      padding: 3rem;
+
+      & span {
+        color: var(--vermelho-base);
+      }
+
+      & .form-grid {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 3rem;
+
+        & .form-group {
+          display: flex;
+          flex-direction: column;
+          width: 50%;
+
+          & label {
+            color: var(--cinza-texto-base);
+            font-size: 1.7rem;
+            margin-bottom: 1rem;
+          }
+
+          & input {
+            background-color: var(--branco);
+            border: 5px solid var(--cinza-claro);
+            padding: 1rem;
+            border-radius: 1rem;
+            border: 1px solid rgb(119, 119, 119);
+            width: 95%;
+            font-size: 1.7rem;
+
+            &:focus {
+              outline: 1px solid var(--vermelho-base);
+            }
+          }
+        }
+      }
+
+      & .form-group-mensagem {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;
+
+        & label {
+          color: var(--cinza-texto-base);
+          font-size: 1.7rem;
+          margin-bottom: 1rem;
+        }
+
+        & textarea {
+          background-color: var(--branco);
+          border: 5px solid var(--cinza-claro);
+          padding: 1rem;
+          border-radius: 1rem;
+          border: 1px solid rgb(119, 119, 119);
+          font-size: 1.7rem;
+          resize: none;
+
+          &:focus {
+            outline: 1px solid var(--vermelho-base);
+          }
+        }
+      }
+
+      & .btn-vermelho {
+        border: none;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  /* TITULO  */
+
+  #titulo {
+    padding: 2rem 4%;
+    & p {
+      text-align: justify;
+    }
+  }
+
+  /* FORMULARIO  */
+
+  #formulario {
+    & .interface {
+      flex-direction: column;
+      & .informacoes {
+        padding: 2rem 4%;
+        width: 100%;
+        margin-bottom: 2rem;
+        & p {
+          text-align: justify;
+        }
+      }
+      & form {
+        padding: 2rem 4%;
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: -1rem;
+        & .form-grid {
+          flex-direction: column;
+          gap: 2rem;
+          margin-bottom: 2rem;
+          & .form-group {
+            width: 100%;
+            & input {
+              width: 100%;
+            }
+          }
+        }
+        & .btn-vermelho {
+          height: 5rem;
+        }
+      }
+    }
+  }
 }

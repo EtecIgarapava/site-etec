@@ -275,6 +275,7 @@
     padding: 0 4%;
     & .interface {
       padding: 2rem 0;
+      gap: 2rem;
       & .container-cards {
         flex-direction: column;
         & article {
@@ -284,10 +285,82 @@
       }
     }
     & h3 {
+      font-size: 3rem;
       text-align: center;
     }
     & p {
       text-align: justify;
+    }
+  }
+
+  /* NOSSA EQUIPE */
+
+  #nossa-equipe {
+    padding: 0 4%;
+    & .interface {
+      padding: 2rem 0;
+      gap: 2rem;
+      & .container-cards {
+        flex-direction: column;
+      }
+    }
+    & p {
+      text-align: justify;
+    }
+    & h4 {
+      font-size: 3rem;
+    }
+  }
+
+  /* NOSSA INFRAESTRUTURA */
+
+  #nossa-infraestrutura {
+    padding: 0 4%;
+    & .interface {
+      padding: 2rem 0;
+      gap: 2rem;
+      & .container-cards {
+        flex-direction: column;
+        & article {
+          width: 100%;
+          & .txt-container {
+            & .descricao {
+              text-align: justify;
+            }
+          }
+        }
+      }
+    }
+    & h5 {
+      text-align: center;
+      font-size: 3rem;
+    }
+  }
+
+  /* VISITA */
+
+  #visita {
+    padding: 0 4%;
+    & .interface {
+      padding: 2rem 0;
+      & .container-visita {
+        padding: 2rem 2rem;
+        & h6 {
+          font-size: 3rem;
+          text-align: center;
+        }
+        & p {
+          width: 100%;
+          text-align: justify;
+        }
+        & .btn-vermelho {
+          height: 5rem;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
     }
   }
 }
