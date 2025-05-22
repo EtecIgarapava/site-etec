@@ -374,7 +374,7 @@ footer {
     }
 
     & .menu {
-      position: absolute;
+      position: fixed;
       right: -100%;
       top: 0;
       background-color: var(--cinza-escuro);
