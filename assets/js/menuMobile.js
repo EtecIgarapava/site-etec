@@ -1,33 +1,13 @@
-const header = document.querySelector("header");
+const btn_menu = document.getElementById('btn-menu');
+const icon = document.querySelector('.btn-menu i');
+const menu = document.getElementById("menu");
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 50) {
-    header.classList.add("scrolled");
+btn_menu.addEventListener('click', () => {
+  menu.classList.toggle("ativo");
+  if (icon.classList.contains("fa-bars")) {
+    icon.classList.replace("fa-bars", "fa-xmark");
   } else {
-    header.classList.remove("scrolled");
+    icon.classList.replace("fa-xmark", "fa-bars");
   }
-});
 
-function openNav() {
-  document.getElementById("mySidenav").style.width = "100%";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-
-const sidebarLinks = document.querySelectorAll("#mySidenav a");
-sidebarLinks.forEach((link) => {
-  link.addEventListener("click", closeNav);
-});
-
-document.addEventListener("click", function (event) {
-  const sidenav = document.getElementById("mySidenav");
-  if (
-    sidenav.style.width === "250px" &&
-    !sidenav.contains(event.target) &&
-    event.target.id !== "buttonSidebar"
-  ) {
-    closeNav();
-  }
 });

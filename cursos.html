@@ -1,485 +1,423 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/22f994e04b.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="stylesheet" href="assets/css/cursos.css" />
-    <title>ETEC - Cursos</title>
-  </head>
 
-  <body>
-    <header>
-      <div class="interface">
-        <div class="logo">
-          <a href="index.html">
-            <img src="assets/img/logo.png" alt="Logo Etec" />
-          </a>
-        </div>
-        <div class="menu">
-          <nav>
-            <a href="index.html">Início</a>
-            <a href="quem-somos.html">Quem Somos</a>
-            <a href="cursos.html">Cursos</a>
-            <a href="projetos.html">Projetos</a>
-            <a href="galeria.html">Galeria de Fotos</a>
-            <a href="fale-conosco.html">Fale Conosco</a>
-            <button id="btn-links">
-              Links Externos
-              <span><i class="fa-solid fa-chevron-down"></i></span>
-              <div id="menu-links">
-                <a href="https://nsa.cps.sp.gov.br/" target="_blank">NSA</a>
-                <a href="https://login.live.com/" target="_blank"
-                  >Email Institucional</a
-                >
-              </div>
-            </button>
-          </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/22f994e04b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/cursos.css" />
+  <title>ETEC - Cursos</title>
+</head>
 
-          <!-- Menu Mobile -->
-          <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-              >&times;</a
-            >
-            <a href="index.html">Inicio</a>
-            <a href="quem-somos.html">QuemSomos</a>
-            <a href="cursos.html">Cursos</a>
-            <a href="projetos.html">Projetos</a>
-            <a href="galeria.html">Galeria de Fotos</a>
-            <a href="fale-conosco.html">Fale Conosco</a>
-            <a href="https://nsa.cps.sp.gov.br/">NSA</a>
-            <a href="https://login.live.com/">E-mail Institucional</a>
-          </div>
-          <span id="buttonSidebar" onclick="openNav()">&#9776;</span>
-        </div>
+<body>
+  <header>
+    <div class="interface">
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/img/logo.png" alt="Logo Etec" />
+        </a>
       </div>
-    </header>
-    <section id="titulo">
-      <div class="interface">
-        <h1>Nossos Cursos</h1>
-        <p>Formação técnica de qualidade para impulsionar sua carreira</p>
+      <div class="menu">
+        <nav>
+          <a href="index.html">Início</a>
+          <a href="quem-somos.html">Quem Somos</a>
+          <a href="cursos.html">Cursos</a>
+          <a href="projetos.html">Projetos</a>
+          <a href="galeria.html">Galeria de Fotos</a>
+          <a href="fale-conosco.html">Fale Conosco</a>
+          <button id="btn-links">
+            Links Externos
+            <span><i class="fa-solid fa-chevron-down"></i></span>
+            <div id="menu-links">
+              <a href="https://nsa.cps.sp.gov.br/" target="_blank">NSA</a>
+              <a href="https://login.live.com/" target="_blank">Email Institucional</a>
+            </div>
+          </button>
+        </nav>
       </div>
-    </section>
-    <section id="cursos">
-      <div class="interface">
-        <h2>Cursos Disponíveis</h2>
-        <div class="container-cards">
-          <article>
-            <img
-              src="assets/img/curso-informatica.avif"
-              alt="Imagem do curso de informática"
-            />
-            <div class="container-txt">
-              <div class="titulo">
-                <div class="container-nome">
-                  <h3>Informática</h3>
+    </div>
+  </header>
+  <section id="titulo">
+    <div class="interface">
+      <h1>Nossos Cursos</h1>
+      <p>Formação técnica de qualidade para impulsionar sua carreira</p>
+    </div>
+  </section>
+  <section id="cursos">
+    <div class="interface">
+      <h2>Cursos Disponíveis</h2>
+      <div class="container-cards">
+        <article>
+          <img src="assets/img/curso-informatica.avif" alt="Imagem do curso de informática" />
+          <div class="container-txt">
+            <div class="titulo">
+              <div class="container-nome">
+                <h3>Informática</h2>
                   <p>Técnico • 3 semestres • Noturno</p>
-                </div>
-                <i class="fa-solid fa-graduation-cap"></i>
               </div>
-              <p class="descricao">
-                Formação em desenvolvimento de software, web, mobile e sistemas
-                de informação.
-              </p>
-
-              <ul>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> Desenvolver sistemas
-                  computacionais
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> Programação em
-                  diversas linguagens
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> Banco de dados e
-                  arquitetura de sistemas
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> Desenvolvimento web e
-                  mobile
-                </li>
-              </ul>
+              <i class="fa-solid fa-graduation-cap"></i>
             </div>
-            <div class="container-mais-detalhes">
-              <p><i class="fa-regular fa-clock"></i> 3 Semestres</p>
-              <a href="cursos/informática.html"
-                >Mais detalhes <i class="fa-solid fa-arrow-right"></i
-              ></a>
-            </div>
-          </article>
-          <article>
-            <img
-              src="assets/img/curso-informatica.avif"
-              alt="Imagem do curso de informática"
-            />
-            <div class="container-txt">
-              <div class="titulo">
-                <div class="container-nome">
-                  <h3>Informática</h3>
-                  <p>Técnico • 3 semestres • Noturno</p>
-                </div>
-                <i class="fa-solid fa-graduation-cap"></i>
-              </div>
-              <p class="descricao">
-                Formação em desenvolvimento de software, web, mobile e sistemas
-                de informação.
-              </p>
-
-              <ul>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> Desenvolver sistemas
-                  computacionais
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> Programação em
-                  diversas linguagens
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> Banco de dados e
-                  arquitetura de sistemas
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> Desenvolvimento web e
-                  mobile
-                </li>
-              </ul>
-            </div>
-            <div class="container-mais-detalhes">
-              <p><i class="fa-regular fa-clock"></i> 3 Semestres</p>
-              <a href="cursos/informática.html"
-                >Mais detalhes <i class="fa-solid fa-arrow-right"></i
-              ></a>
-            </div>
-          </article>
-          <article>
-            <img
-              src="assets/img/curso-informatica.avif"
-              alt="Imagem do curso de informática"
-            />
-            <div class="container-txt">
-              <div class="titulo">
-                <div class="container-nome">
-                  <h3>Informática</h3>
-                  <p>Técnico • 3 semestres • Noturno</p>
-                </div>
-                <i class="fa-solid fa-graduation-cap"></i>
-              </div>
-              <p class="descricao">
-                Formação em desenvolvimento de software, web, mobile e sistemas
-                de informação.
-              </p>
-
-              <ul>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> Desenvolver sistemas
-                  computacionais
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> Programação em
-                  diversas linguagens
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> Banco de dados e
-                  arquitetura de sistemas
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> Desenvolvimento web e
-                  mobile
-                </li>
-              </ul>
-            </div>
-            <div class="container-mais-detalhes">
-              <p><i class="fa-regular fa-clock"></i> 3 Semestres</p>
-              <a href="cursos/informática.html"
-                >Mais detalhes <i class="fa-solid fa-arrow-right"></i
-              ></a>
-            </div>
-          </article>
-          <article>
-            <img
-              src="assets/img/curso-informatica.avif"
-              alt="Imagem do curso de informática"
-            />
-            <div class="container-txt">
-              <div class="titulo">
-                <div class="container-nome">
-                  <h3>Informática</h3>
-                  <p>Técnico • 3 semestres • Noturno</p>
-                </div>
-                <i class="fa-solid fa-graduation-cap"></i>
-              </div>
-              <p class="descricao">
-                Formação em desenvolvimento de software, web, mobile e sistemas
-                de informação.
-              </p>
-
-              <ul>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> Desenvolver sistemas
-                  computacionais
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> Programação em
-                  diversas linguagens
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> Banco de dados e
-                  arquitetura de sistemas
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> Desenvolvimento web e
-                  mobile
-                </li>
-              </ul>
-            </div>
-            <div class="container-mais-detalhes">
-              <p><i class="fa-regular fa-clock"></i> 3 Semestres</p>
-              <a href="cursos/informática.html"
-                >Mais detalhes <i class="fa-solid fa-arrow-right"></i
-              ></a>
-            </div>
-          </article>
-          <article>
-            <img
-              src="assets/img/curso-informatica.avif"
-              alt="Imagem do curso de informática"
-            />
-            <div class="container-txt">
-              <div class="titulo">
-                <div class="container-nome">
-                  <h3>Informática</h3>
-                  <p>Técnico • 3 semestres • Noturno</p>
-                </div>
-                <i class="fa-solid fa-graduation-cap"></i>
-              </div>
-              <p class="descricao">
-                Formação em desenvolvimento de software, web, mobile e sistemas
-                de informação.
-              </p>
-
-              <ul>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> Desenvolver sistemas
-                  computacionais
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> Programação em
-                  diversas linguagens
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> Banco de dados e
-                  arquitetura de sistemas
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> Desenvolvimento web e
-                  mobile
-                </li>
-              </ul>
-            </div>
-            <div class="container-mais-detalhes">
-              <p><i class="fa-regular fa-clock"></i> 3 Semestres</p>
-              <a href="cursos/informática.html"
-                >Mais detalhes <i class="fa-solid fa-arrow-right"></i
-              ></a>
-            </div>
-          </article>
-          <article>
-            <img
-              src="assets/img/curso-informatica.avif"
-              alt="Imagem do curso de informática"
-            />
-            <div class="container-txt">
-              <div class="titulo">
-                <div class="container-nome">
-                  <h3>Informática</h3>
-                  <p>Técnico • 3 semestres • Noturno</p>
-                </div>
-                <i class="fa-solid fa-graduation-cap"></i>
-              </div>
-              <p class="descricao">
-                Formação em desenvolvimento de software, web, mobile e sistemas
-                de informação.
-              </p>
-              <ul>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> Desenvolver sistemas
-                  computacionais
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> Programação em
-                  diversas linguagens
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> Banco de dados e
-                  arquitetura de sistemas
-                </li>
-                <li>
-                  <i class="fa-solid fa-circle-check"></i> Desenvolvimento web e
-                  mobile
-                </li>
-              </ul>
-            </div>
-            <div class="container-mais-detalhes">
-              <p><i class="fa-regular fa-clock"></i> 3 Semestres</p>
-              <a href="cursos/informática.html"
-                >Mais detalhes <i class="fa-solid fa-arrow-right"></i
-              ></a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-    <section id="seletivo">
-      <div class="interface">
-        <div class="txt-seletivo">
-          <h4>Processo Seletivo</h4>
-          <p>
-            O ingresso nos cursos técnicos da ETEC Antônio Junqueira da Veiga é
-            realizado por meio do Vestibulinho, processo seletivo que ocorre
-            semestralmente.
-          </p>
-          <p>
-            As inscrições são realizadas exclusivamente pelo site oficial do
-            Centro Paula Souza, e a prova consiste em questões de conhecimentos
-            gerais, português e matemática.
-          </p>
-          <div class="container-info">
-            <div class="info">
-              <i class="fa-regular fa-calendar-days"></i>
-              <div class="txt-container">
-                <p class="titulo">Inscrições</p>
-                <p class="descricao">
-                  Consulte o calendário oficial para datas
-                </p>
-              </div>
-            </div>
-            <div class="info">
-              <i class="fa-regular fa-file-lines"></i>
-              <div class="txt-container">
-                <p class="titulo">Prova</p>
-                <p class="descricao">Conhecimentos gerais e específicos</p>
-              </div>
-            </div>
-            <div class="info">
-              <i class="fa-regular fa-circle-check"></i>
-              <div class="txt-container">
-                <p class="titulo">Resultado</p>
-                <p class="descricao">Publicado no site oficial</p>
-              </div>
-            </div>
-          </div>
-          <a href="#" class="btn-vermelho"
-            >Saiba mais sobre o Vestibulinho
-            <i class="fa-solid fa-arrow-right"></i
-          ></a>
-        </div>
-        <div class="container-img-seletivo">
-          <img
-            src="assets/img/vestibulinho.avif"
-            alt="Imagem do vestibulinho"
-          />
-          <span>
-            <p class="titulo">Vestibulinho</p>
-            <p class="descricao">Sua porta de entrada para o futuro</p>
-          </span>
-        </div>
-      </div>
-    </section>
-    <section id="vestibulinho">
-      <div class="interface">
-        <div class="container-vestibulinho">
-          <h5>Pronto para começar sua jornada educacional?</h5>
-          <p>
-            Inscreva-se no Vestibulinho da ETEC Antônio Junqueira da Veiga e dê
-            o primeiro passo para sua carreira profissional.
-          </p>
-          <div class="container-btn">
-            <a href="#" class="btn-vermelho">
-              Inscreva-se no Vestibulinho
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-            <a href="#" class="btn-azul">
-              Fale conosco <i class="fa-solid fa-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div class="interface">
-        <div class="container">
-          <article class="escola">
-            <p class="titulo">ETEC Antônio Junqueira da Veiga</p>
             <p class="descricao">
-              Instituição de ensino técnico e médio comprometida com a educação
-              de qualidade e formação profissional dos nossos alunos.
+              Formação em desenvolvimento de software, web, mobile e sistemas
+              de informação.
             </p>
-          </article>
-          <article class="contato">
-            <p class="titulo">Contato</p>
+
             <ul>
               <li>
-                <i class="fa-solid fa-location-dot"></i>Fazenda Baixada, s/n°,
-                Zona Rural. Caixa Postal 68, Igarapava 14540000.
+                <i class="fa-solid fa-circle-check"></i> Desenvolver sistemas
+                computacionais
               </li>
-              <li><i class="fa-solid fa-phone"></i>(16) 3172-1814</li>
-              <li><i class="fa-solid fa-envelope"></i>emailteste@gmail.com</li>
-              <li><i class="fa-solid fa-clock"></i>Seg - Sex: 7:00 - 23:00</li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Programação em
+                diversas linguagens
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Banco de dados e
+                arquitetura de sistemas
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Desenvolvimento web e
+                mobile
+              </li>
             </ul>
-          </article>
-          <article class="links-rapidos">
-            <p class="titulo">Links Rápidos</p>
-            <nav>
-              <ul>
-                <li><a href="quem-somos.html">Quem somos</a></li>
-                <li><a href="cursos.html">Cursos</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="fale-conosco.html">Entre em contato</a></li>
-                <li>
-                  <a href="https://vestibulinho.etec.sp.gov.br/"
-                    >Vestibulinho</a
-                  >
-                </li>
-              </ul>
-            </nav>
-          </article>
-          <article class="redes-sociais">
-            <p class="titulo">Redes Sociais</p>
-            <nav>
-              <a href=""><i class="fa-brands fa-facebook"></i></a>
-              <a href=""><i class="fa-brands fa-instagram"></i></a>
-              <a href=""><i class="fa-brands fa-youtube"></i></a>
-            </nav>
-          </article>
-        </div>
-        <div class="direitos">
-          <div>
-            <p>
-              © 2025 ETEC Antônio Junqueira da Veiga. Todos os direitos
-              reservados.
-            </p>
-            <p>
-              Desenvolvido por
-              <a href="https://leandroarantes.com.br/" target="_blank"
-                >Leandro</a
-              >, <a href="">Ruan</a> e
-              <a href="https://www.walysson.com.br/" target="_blank">Walysson</a
-              >.
-            </p>
           </div>
-          <img
-            src="assets/img/Logotipos/logo_55anos_cps_horizontal_br.png"
-            alt="Logotipo do Centro Paula Souza"
-          />
+          <div class="container-mais-detalhes">
+            <p><i class="fa-regular fa-clock"></i> 3 Semestres</p>
+            <a href="cursos/informática.html">Mais detalhes <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+        <article>
+          <img src="assets/img/curso-informatica.avif" alt="Imagem do curso de informática" />
+          <div class="container-txt">
+            <div class="titulo">
+              <div class="container-nome">
+                <h3>Informática</h3>
+                <p>Técnico • 3 semestres • Noturno</p>
+              </div>
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <p class="descricao">
+              Formação em desenvolvimento de software, web, mobile e sistemas
+              de informação.
+            </p>
+
+            <ul>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Desenvolver sistemas
+                computacionais
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Programação em
+                diversas linguagens
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Banco de dados e
+                arquitetura de sistemas
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Desenvolvimento web e
+                mobile
+              </li>
+            </ul>
+          </div>
+          <div class="container-mais-detalhes">
+            <p><i class="fa-regular fa-clock"></i> 3 Semestres</p>
+            <a href="cursos/informática.html">Mais detalhes <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+        <article>
+          <img src="assets/img/curso-informatica.avif" alt="Imagem do curso de informática" />
+          <div class="container-txt">
+            <div class="titulo">
+              <div class="container-nome">
+                <h3>Informática</h3>
+                <p>Técnico • 3 semestres • Noturno</p>
+              </div>
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <p class="descricao">
+              Formação em desenvolvimento de software, web, mobile e sistemas
+              de informação.
+            </p>
+
+            <ul>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Desenvolver sistemas
+                computacionais
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Programação em
+                diversas linguagens
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Banco de dados e
+                arquitetura de sistemas
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Desenvolvimento web e
+                mobile
+              </li>
+            </ul>
+          </div>
+          <div class="container-mais-detalhes">
+            <p><i class="fa-regular fa-clock"></i> 3 Semestres</p>
+            <a href="cursos/informática.html">Mais detalhes <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+        <article>
+          <img src="assets/img/curso-informatica.avif" alt="Imagem do curso de informática" />
+          <div class="container-txt">
+            <div class="titulo">
+              <div class="container-nome">
+                <h3>Informática</h3>
+                <p>Técnico • 3 semestres • Noturno</p>
+              </div>
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <p class="descricao">
+              Formação em desenvolvimento de software, web, mobile e sistemas
+              de informação.
+            </p>
+
+            <ul>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Desenvolver sistemas
+                computacionais
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Programação em
+                diversas linguagens
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Banco de dados e
+                arquitetura de sistemas
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Desenvolvimento web e
+                mobile
+              </li>
+            </ul>
+          </div>
+          <div class="container-mais-detalhes">
+            <p><i class="fa-regular fa-clock"></i> 3 Semestres</p>
+            <a href="cursos/informática.html">Mais detalhes <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+        <article>
+          <img src="assets/img/curso-informatica.avif" alt="Imagem do curso de informática" />
+          <div class="container-txt">
+            <div class="titulo">
+              <div class="container-nome">
+                <h3>Informática</h3>
+                <p>Técnico • 3 semestres • Noturno</p>
+              </div>
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <p class="descricao">
+              Formação em desenvolvimento de software, web, mobile e sistemas
+              de informação.
+            </p>
+
+            <ul>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Desenvolver sistemas
+                computacionais
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Programação em
+                diversas linguagens
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Banco de dados e
+                arquitetura de sistemas
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Desenvolvimento web e
+                mobile
+              </li>
+            </ul>
+          </div>
+          <div class="container-mais-detalhes">
+            <p><i class="fa-regular fa-clock"></i> 3 Semestres</p>
+            <a href="cursos/informática.html">Mais detalhes <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+        <article>
+          <img src="assets/img/curso-informatica.avif" alt="Imagem do curso de informática" />
+          <div class="container-txt">
+            <div class="titulo">
+              <div class="container-nome">
+                <h3>Informática</h3>
+                <p>Técnico • 3 semestres • Noturno</p>
+              </div>
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <p class="descricao">
+              Formação em desenvolvimento de software, web, mobile e sistemas
+              de informação.
+            </p>
+            <ul>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Desenvolver sistemas
+                computacionais
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Programação em
+                diversas linguagens
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Banco de dados e
+                arquitetura de sistemas
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Desenvolvimento web e
+                mobile
+              </li>
+            </ul>
+          </div>
+          <div class="container-mais-detalhes">
+            <p><i class="fa-regular fa-clock"></i> 3 Semestres</p>
+            <a href="cursos/informática.html">Mais detalhes <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section id="seletivo">
+    <div class="interface">
+      <div class="txt-seletivo">
+        <h2>Processo Seletivo</h2>
+        <p>
+          O ingresso nos cursos técnicos da ETEC Antônio Junqueira da Veiga é
+          realizado por meio do Vestibulinho, processo seletivo que ocorre
+          semestralmente.
+        </p>
+        <p>
+          As inscrições são realizadas exclusivamente pelo site oficial do
+          Centro Paula Souza, e a prova consiste em questões de conhecimentos
+          gerais, português e matemática.
+        </p>
+        <div class="container-info">
+          <div class="info">
+            <i class="fa-regular fa-calendar-days"></i>
+            <div class="txt-container">
+              <p class="titulo">Inscrições</p>
+              <p class="descricao">
+                Consulte o calendário oficial para datas
+              </p>
+            </div>
+          </div>
+          <div class="info">
+            <i class="fa-regular fa-file-lines"></i>
+            <div class="txt-container">
+              <p class="titulo">Prova</p>
+              <p class="descricao">Conhecimentos gerais e específicos</p>
+            </div>
+          </div>
+          <div class="info">
+            <i class="fa-regular fa-circle-check"></i>
+            <div class="txt-container">
+              <p class="titulo">Resultado</p>
+              <p class="descricao">Publicado no site oficial</p>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn-vermelho">Saiba mais sobre o Vestibulinho
+          <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="container-img-seletivo">
+        <img src="assets/img/vestibulinho.avif" alt="Imagem do vestibulinho" />
+        <span>
+          <p class="titulo">Vestibulinho</p>
+          <p class="descricao">Sua porta de entrada para o futuro</p>
+        </span>
+      </div>
+    </div>
+  </section>
+  <section id="vestibulinho">
+    <div class="interface">
+      <div class="container-vestibulinho">
+        <h2>Pronto para começar sua jornada educacional?</h2>
+        <p>
+          Inscreva-se no Vestibulinho da ETEC Antônio Junqueira da Veiga e dê
+          o primeiro passo para sua carreira profissional.
+        </p>
+        <div class="container-btn">
+          <a href="#" class="btn-vermelho">
+            Inscreva-se no Vestibulinho
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#" class="btn-azul">
+            Fale conosco <i class="fa-solid fa-arrow-right"></i>
+          </a>
         </div>
       </div>
-    </footer>
-    <script src="assets/js/btn-header.js"></script>
-    <script src="assets/js/menuMobile.js"></script>
-  </body>
+    </div>
+  </section>
+  <footer>
+    <div class="interface">
+      <div class="container">
+        <article class="escola">
+          <p class="titulo">ETEC Antônio Junqueira da Veiga</p>
+          <p class="descricao">
+            Instituição de ensino técnico e médio comprometida com a educação
+            de qualidade e formação profissional dos nossos alunos.
+          </p>
+        </article>
+        <article class="contato">
+          <p class="titulo">Contato</p>
+          <ul>
+            <li>
+              <i class="fa-solid fa-location-dot"></i>Fazenda Baixada, s/n°,
+              Zona Rural. Caixa Postal 68, Igarapava 14540000.
+            </li>
+            <li><i class="fa-solid fa-phone"></i>(16) 3172-1814</li>
+            <li><i class="fa-solid fa-envelope"></i>emailteste@gmail.com</li>
+            <li><i class="fa-solid fa-clock"></i>Seg - Sex: 7:00 - 23:00</li>
+          </ul>
+        </article>
+        <article class="links-rapidos">
+          <p class="titulo">Links Rápidos</p>
+          <nav>
+            <ul>
+              <li><a href="quem-somos.html">Quem somos</a></li>
+              <li><a href="cursos.html">Cursos</a></li>
+              <li><a href="projetos.html">Projetos</a></li>
+              <li><a href="fale-conosco.html">Entre em contato</a></li>
+              <li>
+                <a href="https://vestibulinho.etec.sp.gov.br/">Vestibulinho</a>
+              </li>
+            </ul>
+          </nav>
+        </article>
+        <article class="redes-sociais">
+          <p class="titulo">Redes Sociais</p>
+          <nav>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+          </nav>
+        </article>
+      </div>
+      <div class="direitos">
+        <div>
+          <p>
+            © 2025 ETEC Antônio Junqueira da Veiga. Todos os direitos
+            reservados.
+          </p>
+          <p>
+            Desenvolvido por
+            <a href="https://leandroarantes.com.br/" target="_blank">Leandro</a>, <a href="">Ruan</a> e
+            <a href="https://www.walysson.com.br/" target="_blank">Walysson</a>.
+          </p>
+        </div>
+        <img src="assets/img/Logotipos/logo_55anos_cps_horizontal_br.png" alt="Logotipo do Centro Paula Souza" />
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/btn-header.js"></script>
+  <script src="assets/js/menuMobile.js"></script>
+</body>
+
 </html>
