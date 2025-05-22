@@ -371,7 +371,6 @@ footer {
     color: #818181;
     display: block;
     transition: 0.3s;
-
     &:hover {
       color: #f1f1f1;
     }
@@ -383,6 +382,7 @@ footer {
     right: 4%;
     font-size: 50px;
     margin-left: 50px;
+    -webkit-tap-highlight-color: transparent;
   }
 }
 @media (max-width: 1023px) {
@@ -408,6 +408,7 @@ footer {
     display: block;
     font-size: 3.5rem;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
   }
 
   #mySidenav {
