@@ -383,6 +383,7 @@ footer {
       transition: 0.3s ease all;
 
       & nav {
+        width: 100%;
         flex-direction: column;
 
         & .link-mob {
@@ -390,7 +391,7 @@ footer {
         }
 
         & a {
-          padding: 8px 8px 8px 32px;
+          padding: 1rem 0;
           text-decoration: none;
           text-align: center;
           font-size: 3rem;
