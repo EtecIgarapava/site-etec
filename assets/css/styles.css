@@ -178,7 +178,6 @@ header {
 
   & .interface {
     flex-direction: column;
-    gap: 2rem;
     padding: 1% 0;
   }
 
