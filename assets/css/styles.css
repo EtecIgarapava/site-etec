@@ -295,14 +295,15 @@ footer {
       padding: 2rem 0rem;
 
       & div {
+        margin-right: 1rem;
+
         & p {
           color: var(--branco);
           font-size: 2rem;
-          margin-top: 1rem;
-          font-weight: bold;
 
           a {
             color: var(--azul-destaque-base);
+            font-weight: bold;
 
             & a:hover {
               color: var(--secundario-hover);
@@ -312,8 +313,7 @@ footer {
       }
 
       & img {
-        width: 670px;
-        height: 100px;
+        width: 50%;
       }
     }
   }
