@@ -209,11 +209,9 @@
     padding: 5rem 2rem;
     gap: 2rem;
     border-radius: 1rem;
-    background: linear-gradient(
-      303deg,
-      rgba(178, 0, 0, 0.17) 40%,
-      rgba(30, 58, 138, 0.17) 83%
-    );
+    background: linear-gradient(303deg,
+        rgba(178, 0, 0, 0.17) 40%,
+        rgba(30, 58, 138, 0.17) 83%);
 
     & h6 {
       font-size: 3.5rem;
@@ -235,9 +233,11 @@
 
   #titulo {
     padding: 0 4%;
+
     & .interface {
       padding: 2rem 0;
     }
+
     & p {
       text-align: justify;
     }
@@ -247,24 +247,31 @@
 
   #nossa-historia {
     padding: 0 4%;
+
     & .interface {
       padding: 2rem 0;
       flex-direction: column;
+
       & .txt-nossa-historia {
         width: 100%;
+
         & h2 {
           text-align: center;
         }
+
         & p {
           text-align: justify;
         }
       }
     }
+
     & .container-img {
       width: 100%;
+
       & img {
         width: 100%;
       }
+
       & span {
         left: 50%;
         width: max-content;
@@ -277,21 +284,26 @@
 
   #missao-visao-valores {
     padding: 0 4%;
+
     & .interface {
       padding: 2rem 0;
       gap: 2rem;
+
       & .container-cards {
         flex-direction: column;
+
         & article {
           height: auto;
           width: 100%;
         }
       }
     }
+
     & h3 {
       font-size: 3rem;
       text-align: center;
     }
+
     & p {
       text-align: justify;
     }
@@ -301,16 +313,20 @@
 
   #nossa-equipe {
     padding: 0 4%;
+
     & .interface {
       padding: 2rem 0;
       gap: 2rem;
+
       & .container-cards {
         flex-direction: column;
       }
     }
+
     & p {
       text-align: justify;
     }
+
     & h4 {
       font-size: 3rem;
     }
@@ -320,24 +336,37 @@
 
   #nossa-infraestrutura {
     padding: 0 4%;
+
     & .interface {
       padding: 2rem 0;
       gap: 2rem;
-      & .container-cards {
-        flex-direction: column;
-        & article {
-          width: 100%;
-          & .txt-container {
-            & .descricao {
-              text-align: justify;
-            }
-          }
-        }
-      }
     }
+
     & h5 {
       text-align: center;
       font-size: 3rem;
+    }
+
+    & .container-cards {
+      overflow-x: auto;
+      align-items: normal;
+      height: 30rem;
+      width: 100%;
+
+      & article {
+        flex: 0 0 auto;
+        width: 30rem;
+
+        & img {
+          height: 55%;
+        }
+
+        & .txt-container {
+          & .descricao {
+            text-align: justify;
+          }
+        }
+      }
     }
   }
 
@@ -345,18 +374,23 @@
 
   #visita {
     padding: 0 4%;
+
     & .interface {
       padding: 2rem 0;
+
       & .container-visita {
         padding: 2rem 2rem;
+
         & h6 {
           font-size: 3rem;
           text-align: center;
         }
+
         & p {
           width: 100%;
           text-align: justify;
         }
+
         & .btn-vermelho {
           height: 5rem;
           width: 100%;
