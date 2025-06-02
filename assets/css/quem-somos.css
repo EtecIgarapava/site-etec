@@ -351,6 +351,7 @@
       overflow-x: auto;
       align-items: normal;
       height: 30rem;
+      gap: 1rem;
       width: 100%;
 
       & article {
